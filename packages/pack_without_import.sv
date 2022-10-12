@@ -1,4 +1,4 @@
- package hi;
+ /*package hi;
   int a;
   class captain;
     int a1;
@@ -14,10 +14,10 @@
 
   virtual class sparrow;
   endclass:sparrow
-endpackage:hi
+endpackage:hi*/
 
 
-import hi::*;
+//import hi::*;
 
 function ironman;
   $display("I am ironman of the module");
@@ -27,8 +27,10 @@ endfunction:ironman
 module one;
 
 initial begin
+  /*ironman();
   hi::ironman();
-  void'(pack::test());
+  void'(pack::test());*/
+ $display("hi");
   //assigning();throws runtime error as not a syntax fault assigning is a funcion of package 'pack' and  
   // without scope resolution operator it is an error as package is not imported.
 end
