@@ -1,4 +1,28 @@
-uvmf:
+uvmf 
+  environments: 
+    "jtag_env" :
+      agents :
+        #"jtag_age":
+          - name: "jtag_agent"
+            type: "jtag"
+            #isactive: "True"
+            # hascoverage: "True"
+            #noofslaves: "1"
+  benches:
+    "jtag_ben" :
+      top_env: "jtag_env"
+      #interface_params:
+      # - bfm_name: "jtag_driver"
+      #   value: "1" 
+      # - bfm_name: "jtag_monitor"
+      actie_passive:
+       - bfm_name: "jtag_agent"
+         value: "ACTIVE"
+
+           #isactive: &isa 
+           #  value : "T"
+           #value: 
+           #<<: *isa
   interfaces: 
     "jtag":
       # The name of the clock & reset are the only required
@@ -43,12 +67,11 @@ uvmf:
           type: "bit"           
           isrand: "False"
             #set to true if the exists function is being checked 
-          #iscompare: "False"
       config_vars:
         - name: "isactive"
           type: "bit"
           isrand: "True"
-          value: "1'b1"
+          value: "1'b01"
         - name: "noofslaves"
           type: "int"
           isrand: "True"
@@ -56,7 +79,7 @@ uvmf:
         - name: "hascoverage"
           type: "bit"
           isrand: "True"
-          value: "1'b1"
+          value: "1'b01"
       config_constraints:
         - name: "slavecount"
           value: "{ noofslaves>0;noofslaves<17 }"
