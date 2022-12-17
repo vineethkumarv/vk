@@ -1,0 +1,22 @@
+uvmf:
+  environments: 
+    "jtag_env" :
+      agents :
+        #"jtag_age":
+          - name: "jtag_agent"
+            type: "jtag"
+  benches:
+    "jtag_ben" :
+      top_env: "jtag_env"
+      #interface_params:
+      # - bfm_name: "jtag_driver"
+      #   value: "1" 
+      # - bfm_name: "jtag_monitor"
+      active_passive:
+       - bfm_name: "jtag_agent"
+         value: "ACTIVE"
+
+           #isactive: &isa 
+           #  value : "T"
+           #value: 
+           #<<: *isa

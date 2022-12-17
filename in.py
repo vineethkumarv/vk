@@ -1,9 +1,14 @@
-print "hai hello"
-print" eey heygidhiya"
+print('enter a number')
+n=int(input())
+if n!=0:
+  print "hai hello"
+else :
+  print" eey heygidhiya"
+
 print "baayilli"
 print "hogi bharthini"
-<<<<<<< HEAD
+#<<<<<<< HEAD
 print "added line r"
-=======
+#=======
 print"jkjl"
->>>>>>> hai
+#>>>>>>> hai

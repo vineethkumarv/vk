@@ -1,0 +1,10 @@
+uvmf: 
+  util_components:
+    "jtag_coverage" :
+      type: "coverage"
+      analysis_exports:
+        - name: "jtag_cov_ae"
+          type: "jtag_transaction"
+      #analysis_ports : 
+      # - name: "jtag_cov_ap"
+      #   type: "jtag_transaction"  
