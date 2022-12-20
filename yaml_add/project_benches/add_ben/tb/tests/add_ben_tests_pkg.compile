@@ -1,0 +1,9 @@
+needs:
+  - $UVMF_HOME/uvmf_base_pkg/uvmf_base_pkg.compile
+  - ../../../../verification_ip/interface_packages/in_intf_pkg/in_intf.compile
+  - ../../../../verification_ip/interface_packages/out_intf_pkg/out_intf.compile
+  - ../../../../verification_ip/environment_packages/add_env_env_pkg/add_env_env_pkg.compile
+  - ../parameters/add_ben_parameters_pkg.compile
+  - ../sequences/add_ben_sequences_pkg.compile
+src:
+  - add_ben_tests_pkg.sv

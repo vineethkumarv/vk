@@ -1,0 +1,1 @@
+$UVMF_VIP_LIBRARY_HOME/interface_packages/out_intf_pkg/out_intf_pkg_hdl.sv

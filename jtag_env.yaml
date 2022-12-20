@@ -1,4 +1,4 @@
-uvmf 
+uvmf: 
   environments: 
     "jtag_env" :
       agents :
