@@ -163,7 +163,7 @@ comp_add_ben_vhdl_dut:
 	$(HDL_COMP_CMD_VHDL) $(add_ben_VHDL_DUT)
 
 # UVMF_CHANGE_ME : Add make target to compile your dut here
-comp_add_ben_dut: comp_add_ben_vhdl_dut comp_add_ben_verilog_dut 
+comp_add_ben_dut: comp_add_ben_verilog_dut 
 # pragma uvmf custom dut_compile_make_target end
 
 
