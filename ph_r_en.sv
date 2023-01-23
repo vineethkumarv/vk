@@ -15,12 +15,12 @@ class ex_test extends uvm_test;
  
   function void phase_ready_to_end(uvm_phase phase);
     phase.raise_objection(this);
-    fork 
-    begin
-     #2;
-    end
-     join_none
-    phase.drop_objection(this);
+    //fork 
+    //begin
+    // //#2;
+    //end
+    // join_none
+    //phase.drop_objection(this);
   endfunction
   task run_phase(uvm_phase phase);
     phase.raise_objection(this);
@@ -39,3 +39,4 @@ module one;
     #7 $display("%0t dropped obj in module",$time);
   join
 endmodule
+
