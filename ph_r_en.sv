@@ -20,7 +20,8 @@ class ex_test extends uvm_test;
     // //#2;
     //end
     // join_none
-    //phase.drop_objection(this);
+    phase.drop_objection(this);
+    //Even if the objection is not dropped her after 20 time delays it is dropped automatically to avoid infinite loops
   endfunction
   task run_phase(uvm_phase phase);
     phase.raise_objection(this);
