@@ -15,8 +15,8 @@ function bit[7:0] for_true(bit[7:0] a);
 
   initial begin
      repeat (2) begin
-    a=std::randomize() with{a > 3;};
-    p=std::randomize();
+    std::randomize(a) with{a > 3;};
+    std::randomize(p);
   end
     $display("value of a is %0d",a);
     $display("value of p is %0d",p);
