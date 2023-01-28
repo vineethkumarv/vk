@@ -1,0 +1,3 @@
+needs:
+  - out_intf_hvl.compile
+  - out_intf_hdl.compile
