@@ -1,6 +1,0 @@
-@use $UVMF_HOME/uvmf_base_pkg/uvmf_base_pkg_hdl.vinfo
-@use out_intf_pkg_hdl.vinfo
-+incdir+@vinfodir
-src/out_intf_if.sv
-src/out_intf_driver_bfm.sv
-src/out_intf_monitor_bfm.sv

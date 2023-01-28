@@ -1,3 +1,0 @@
-needs:
-  - in_intf_hvl.compile
-  - in_intf_hdl.compile

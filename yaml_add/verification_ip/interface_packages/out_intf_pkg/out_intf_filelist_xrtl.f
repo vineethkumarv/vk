@@ -1,3 +1,0 @@
-$UVMF_VIP_LIBRARY_HOME/interface_packages/out_intf_pkg/src/out_intf_if.sv
-$UVMF_VIP_LIBRARY_HOME/interface_packages/out_intf_pkg/src/out_intf_monitor_bfm.sv
-$UVMF_VIP_LIBRARY_HOME/interface_packages/out_intf_pkg/src/out_intf_driver_bfm.sv

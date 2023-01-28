@@ -1,9 +1,0 @@
-needs:
-  - $UVMF_HOME/uvmf_base_pkg/uvmf_base_pkg_hdl.compile
-  - ./in_intf_common.compile
-incdir:
-  - .
-src:
-  - src/in_intf_if.sv
-  - src/in_intf_monitor_bfm.sv
-  - src/in_intf_driver_bfm.sv
